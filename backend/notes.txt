@@ -1,0 +1,33 @@
+backend of e-commerce
+first did command npm init
+then: npm install cors dotenv express jsonwebtoken mongoose multer stripe validator cloudinary
+npm install bcrypt
+
+#"scripts": {
+    "start": "node server.js",#for deployment
+    "server": "nodemon server.js"#for local server
+  }
+
+# added  "type" :"module" too.
+
+#created a serer //
+
+created user and product model
+
+______________________________________
+In addProduct adder function:
+we have got the details of a products(for images we used multer)
+now we have to store the produt in the database,
+but the images cannot be stored in database so we use cloudinary.
+
+In cloudinary we uplaod the images and from cloudinary we get the URL and that is used to store it in database.
+
+Go through productController
+had issue with thunderclient reg the file uplaod
+_____________________________________________________________
+
+______________________________________
+we have generated a token which is of the form "email+password" for admin.
+with the help of this token we are authenticating the admin
+_____________________________________________________________
+
